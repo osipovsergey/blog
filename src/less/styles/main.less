@@ -1,0 +1,24 @@
+@import '../mixins/mixins.less';
+
+ .font-face('Raleway-Bold', '../../fonts/static/Raleway-Black', 400, normal);
+
+.header {
+    background-color: #f0f0f0;
+
+    &__content {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        padding: 12px 0;
+        align-items: center;
+    }
+
+    &__image {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__title {
+        .font('Raleway-Bold', 24px, normal, normal);
+    }
+}

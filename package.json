@@ -1,10 +1,10 @@
 {
-    "name": "default_template",
+    "name": "blog",
     "version": "1.0.0",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/osipovsergey/default_template.git"
+        "url": "git+ssh://git@github.com:osipovsergey/blog.git"
     },
     "author": "Sergey Osipov",
     "license": "MIT",
@@ -46,11 +46,11 @@
         "webpack-dev-server": "^3.11.0",
         "webpack-merge": "^5.2.0"
     },
-    "description": "Webpack + Vue + Less",
+    "description": "My blog",
     "bugs": {
-        "url": "https://github.com/osipovsergey/default_template/issues"
+        "url": "https://github.com/osipovsergey/blog/issues"
     },
-    "homepage": "https://github.com/osipovsergey/default_template#readme",
+    "homepage": "https://github.com/osipovsergey/blog#readme",
     "scripts": {
         "test": "jest",
         "dev": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",

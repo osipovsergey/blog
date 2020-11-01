@@ -6,6 +6,7 @@
     background-color: @section;
     box-shadow: 0px 0px 11px 0px @shadow;
     padding: 12px 6px;
+    border-radius: 10px;
 
     &__content {
         display: flex;
@@ -16,9 +17,10 @@
     }
 
     &__image {
-        width: 100px;
-        height: 100px;
-        padding-bottom: 12px;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 12px;
+        border-radius: 15px;
     }
 
     &__title {
@@ -38,6 +40,10 @@
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
+
+            .tablet({
+                flex-flow: row wrap;
+            });
         }
 
         &__item {
@@ -46,6 +52,14 @@
             text-decoration: none;
             color: @text-navigation;
             .font('Raleway-Thin', 18px, 200, normal);
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            .tablet({
+                margin: 12px;
+            });
         }
     }
 }

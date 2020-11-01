@@ -1,50 +1,36 @@
 // width for mobile
-@mobile   : 360px;
-@mobile-l : 480px;
+@mobile   : 599px;
 
 // width for tablet
-@tablet   : 768px;
-@tablet-l : 1024px;
+@tablet   : 600px;
+@tablet-l : 900px;
 
 // width for laptop
 
-@laptop   : 1366px;
-@laptop-l : 1440px;
+@laptop   : 1200px;
 
 // width for desktop
 
-@desktop  : 1680px;
+@desktop  : 1800px;
 
 // Mixins for media-queries
 
-.mobile-s(@rules) {
+.mobile(@rules) {
   @media (max-width : @mobile) { @rules(); }
 }
 
-.mobile(@rules) {
-  @media (min-width : @mobile) and (max-width : @mobile-l) { @rules(); }
-}
-
 .tablet(@rules) {
-  @media (max-width : @tablet) { @rules(); }
+  @media (min-width : @tablet) { @rules(); }
 }
 
 .tablet-l(@rules) {
-  @media (min-width : @tablet) and (max-width : @tablet-l) { @rules(); }
+  @media (min-width : @tablet-l) { @rules(); }
 }
 
 .laptop(@rules) {
-  @media (max-width : @laptop) { @rules(); }
-}
-
-.laptop-l(@rules) {
-   @media (min-width : @laptop) and (max-width : @laptop-l) { @rules(); }
+  @media (min-width : @laptop) { @rules(); }
 }
 
 .desktop(@rules) {
-  @media (max-width: @desktop) { @rules(); }
-}
-
-.desktop-l(@rules) {
   @media (min-width: @desktop) { @rules(); }
 }

@@ -1,24 +1,51 @@
 @import '../mixins/mixins.less';
 
-.font-face('Raleway-Bold', '../../fonts/static/Raleway-Black', 400, normal);
+.font-face('Raleway-Thin', '../../fonts/static/Raleway-Thin', normal, normal);
 
 .header {
-    background-color: #f0f0f0;
+    background-color: @section;
+    box-shadow: 0px 0px 11px 0px @shadow;
+    padding: 12px 6px;
 
     &__content {
         display: flex;
-        width: 100%;
         flex-flow: column;
-        padding: 12px 0;
         align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid @border;
     }
 
     &__image {
         width: 100px;
         height: 100px;
+        padding-bottom: 12px;
     }
 
     &__title {
-        .font('Raleway-Bold', 24px, normal, normal);
+        padding-bottom: 6px;
+        .font('Raleway-Thin', 24px, normal, normal);
+    }
+
+    &__desc {
+        display: flex;
+        .font('Raleway-Thin', 18px, 200, normal);
+    }
+
+    &__navigation {
+        padding: 12px 0;
+
+        &__items {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            margin: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            color: @text-navigation;
+            .font('Raleway-Thin', 18px, 200, normal);
+        }
     }
 }

@@ -9,19 +9,26 @@
     margin-bottom: 24px;
     border-radius: 10px;
 
-    &__content {
+    &__wrapper {
         display: flex;
-        flex-flow: column;
-        align-items: center;
-        padding: 12px 0;
-        border-bottom: 1px solid @border;
+        flex-flow: column wrap;
+        position: relative;
+        margin: 0 auto;
     }
 
     &__image {
         width: 150px;
         height: 150px;
-        margin-bottom: 12px;
+        margin: 0 auto 12px;
         border-radius: 15px;
+    }
+
+    &__content-text {
+        display: flex;
+        flex-flow: column wrap;
+        padding-bottom: 24px;
+        margin: 0 auto;
+        border-bottom: 1px solid @border;
     }
 
     &__title {
@@ -56,6 +63,7 @@
 
             &:hover {
                 text-decoration: underline;
+                text-decoration-color: @border;
             }
 
             .tablet({

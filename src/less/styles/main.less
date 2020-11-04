@@ -99,3 +99,35 @@
         .font('Raleway-Thin', 18px, 200, normal);
     }
 }
+
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+
+    .tablet({
+        flex-flow: row wrap;
+        justify-content: space-between;
+    })
+}
+
+.social {
+    display: flex;
+    margin-bottom: 18px;
+    justify-content: center;
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 18px;
+    }
+}
+
+.metric {
+    display: flex;
+    margin-bottom: 18px;
+
+    &__text {
+        margin: auto;
+        .font('Raleway-Thin', 18px, 200, normal);
+    }
+}

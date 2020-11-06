@@ -8,7 +8,7 @@
             <div class="project__content-text">
                 <span class="project__title">{{ item.title }}</span>
                 <span class="project__desc">{{ item.desc }}</span>
-                <a v-bind:href=item.link class="project__link">Ссылка</a>
+                <a v-bind:href=item.link class="project__link">Перейти к проекту</a>
             </div>
         </a>
 	</div>

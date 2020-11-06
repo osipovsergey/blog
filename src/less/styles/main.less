@@ -12,14 +12,18 @@
     &__wrapper {
         display: flex;
         flex-flow: column wrap;
-        position: relative;
+    }
+
+    &__bio {
         margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
     }
 
     &__image {
         width: 150px;
         height: 150px;
-        margin: 0 auto 12px;
+        margin: 12px auto;
         border-radius: 15px;
     }
 
@@ -115,7 +119,18 @@
     .tablet({
         flex-flow: row wrap;
         justify-content: space-between;
-    })
+    });
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .tablet({
+            justify-content: space-between;
+        });
+    }
 }
 
 .social {

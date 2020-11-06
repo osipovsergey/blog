@@ -24,22 +24,7 @@ export default {
                     title: 'Default Template',
                     desc: 'Шаблон для начала работы над своим проектом. Webpack 5 + Vue 3 + Less + JEST + PostCSS',
                     link: 'https://github.com/osipovsergey/default_template'
-                },
-                {
-                    title: 'Default Template',
-                    desc: 'Шаблон для начала работы над своим проектом. Webpack 5 + Vue 3 + Less + JEST + PostCSS',
-                    link: 'https://github.com/osipovsergey/default_template'
-                },
-                {
-                    title: 'Default Template',
-                    desc: 'Шаблон для начала работы над своим проектом. Webpack 5 + Vue 3 + Less + JEST + PostCSS',
-                    link: 'https://github.com/osipovsergey/default_template'
-                },
-                {
-                    title: 'Default Template',
-                    desc: 'Шаблон для начала работы над своим проектом. Webpack 5 + Vue 3 + Less + JEST + PostCSS',
-                    link: 'https://github.com/osipovsergey/default_template'
-                },
+                }
             ],
         }
     }

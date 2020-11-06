@@ -13,7 +13,7 @@ module.exports = {
     output: {
         path: paths.build,
         filename: '[name].bundle.js',
-        publicPath: '/',
+        publicPath: './',
     },
 
     resolve: {
@@ -36,6 +36,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: paths.src + '/templates/template.html',
             filename: 'index.html',
+            favicon: paths.src + '/static/favicon.ico'
         }),
         new VueLoaderPlugin()
     ],

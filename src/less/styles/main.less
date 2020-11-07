@@ -2,6 +2,20 @@
 
 .font-face('Raleway-Thin', '../../fonts/static/Raleway-Thin', normal, normal);
 
+@icons: 'html', 'css', 'js', 'vuejs', 'webpack', 'gulp', 'tt', 'bem';
+
+.generate-icons(@array, @name-item, @i: 1) when (@i =< length(@array)) {
+    @item: e( extract(@array, @i));
+
+    &_@{item} {
+        list-style: none;
+        background: url('../../images/icons/@{item}.svg') no-repeat;
+        background-size: contain;
+        padding-left: 36px;
+    }
+    .generate-icons(@array, @name-item, @i + 1);
+}
+
 .header {
     background-color: @section;
     box-shadow: 0px 0px 11px 0px @shadow;
@@ -100,9 +114,29 @@
         .font('Raleway-Thin', 28px, 600, normal);
     }
 
+    &__subtitle {
+        margin: 18px 0 12px;
+        .font('Raleway-Thin', 24px, bold, normal);
+    }
+
     &__text {
-        margin: 12px 0;
+        margin: 0 0 6px;
         .font('Raleway-Thin', 20px, 200, normal);
+    }
+
+    &__list {
+        margin: 0 0 6px;
+        padding: 0;
+    }
+
+    &__list-item {
+        margin: 0 0 6px;
+
+        &__text {
+            .font('Raleway-Thin', 20px, 200, normal);
+        }
+
+        .generate-icons(@array: @icons, @name-item: icon);
     }
 
     &__link {

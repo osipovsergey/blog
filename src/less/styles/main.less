@@ -125,12 +125,19 @@
     }
 
     &__list {
+        display: flex;
+        flex-flow: column wrap;
         margin: 0 0 6px;
         padding: 0;
+
+        .tablet({
+            flex-flow: row wrap;
+            justify-content: space-around;
+        });
     }
 
     &__list-item {
-        margin: 0 0 6px;
+        margin: 0 12px 6px 0;
 
         &__text {
             .font('Raleway-Thin', 20px, 200, normal);

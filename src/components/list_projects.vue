@@ -2,13 +2,13 @@
 	<div class="project">
         <a :key="item.id"
             v-for="item in arrayProjects"
-            v-bind:href=item.link
-            class="project__wrapper"
+            :href=item.link
+            class="project__item"
         >
-            <div class="project__content-text">
+            <div class="project__content">
                 <span class="project__title">{{ item.title }}</span>
                 <span class="project__desc">{{ item.desc }}</span>
-                <a v-bind:href=item.link class="project__link">Перейти к проекту</a>
+                <a :href=item.link class="project__link">Перейти к проекту</a>
             </div>
         </a>
 	</div>
@@ -44,7 +44,7 @@ export default {
         width: 100%;
     });
 
-    &__wrapper {
+    &__item {
         background-color: @section;
         box-shadow: 0px 0px 11px 4px @shadow;
         padding: 12px;
@@ -57,7 +57,7 @@ export default {
         });
     }
 
-    &__content-text {
+    &__content {
         display: flex;
         flex-wrap: wrap;
     }

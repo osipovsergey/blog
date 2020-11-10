@@ -1,6 +1,6 @@
 @import '../mixins/mixins.less';
 
-.font-face('Raleway-Thin', '../../fonts/static/Raleway-Thin', normal, normal);
+.font-face('Raleway-Regular', '../../fonts/static/Raleway-Regular', normal, normal);
 
 @icons: 'html', 'css', 'js', 'vuejs', 'webpack', 'gulp', 'tt', 'bem';
 
@@ -52,12 +52,12 @@
     &__bio-title {
         padding-bottom: 6px;
         margin: 0 auto;
-        .font('Raleway-Thin', 24px, 600, normal);
+        .font('Raleway-Regular', 24px, 500, normal);
     }
 
     &__bio-desc {
         margin: 0 auto;
-        .font('Raleway-Thin', 18px, 600, normal);
+        .font('Raleway-Regular', 18px, 500, normal);
     }
 
     &__navigation {
@@ -79,7 +79,7 @@
         text-align: center;
         text-decoration: none;
         color: @text-navigation;
-        .font('Raleway-Thin', 18px, 200, normal);
+        .font('Raleway-Regular', 18px, 200, normal);
 
         &:hover {
             text-decoration: underline;
@@ -111,17 +111,17 @@
         margin: 0 0 24px;
         text-align: center;
         text-decoration: underline;
-        .font('Raleway-Thin', 28px, 600, normal);
+        .font('Raleway-Regular', 28px, 600, normal);
     }
 
     &__subtitle {
         margin: 18px 0 12px;
-        .font('Raleway-Thin', 24px, bold, normal);
+        .font('Raleway-Regular', 24px, bold, normal);
     }
 
     &__text {
         margin: 0 0 6px;
-        .font('Raleway-Thin', 20px, 200, normal);
+        .font('Raleway-Regular', 20px, 200, normal);
     }
 
     &__list {
@@ -132,7 +132,7 @@
 
         .tablet({
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
         });
     }
 
@@ -208,6 +208,6 @@
     &__metric-text {
         margin: auto;
         text-align: center;
-        .font('Raleway-Thin', 18px, 200, normal);
+        .font('Raleway-Regular', 18px, 200, normal);
     }
 }

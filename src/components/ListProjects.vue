@@ -65,17 +65,17 @@ export default {
     &__title {
         margin-bottom: 18px;
         text-align: center;
-        .font('Raleway-Thin', 24px, 600, normal);
+        .font('Raleway-Regular', 24px, 600, normal);
     }
 
     &__desc {
         margin-bottom: 12px;
-        .font('Raleway-Thin', 20px, 200, normal);
+        .font('Raleway-Regular', 20px, 200, normal);
     }
 
     &__link {
         text-decoration: none;
-        .font('Raleway-Thin', 18px, 500, normal);
+        .font('Raleway-Regular', 18px, 500, normal);
 
         &:hover {
             text-decoration: underline;
